@@ -4,7 +4,7 @@ version: "3.8"
 
 services:
   frontend:
-    image: food-frontend
+    image: venumadhav113/docker-node:fronttag
     ports:
       - "80:80"
     networks:
@@ -13,7 +13,7 @@ services:
       replicas: 2
 
   backend:
-    image: food-backend
+    image: venumadhav113/docker-node:backtag
     networks:
       - foodnet
     deploy:
